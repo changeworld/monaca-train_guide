@@ -1,0 +1,56 @@
+{
+    "plugins": {
+        "jQuery": {
+            "jquery-js": [
+                "jquery.js"
+            ]
+        },
+        "jQuery Mobile": {
+            "jquery-mobile-js": [
+                "jquery-mobile.js"
+            ],
+            "jquery-mobile-css": [
+                "jquery-mobile.css",
+                "jquery-mobile-default-theme.css"
+            ]
+        },
+        "monaca.js": [
+
+        ],
+        "phonegap\/cordova.js": [
+
+        ],
+        "monaca.viewport.js": [
+
+        ],
+        "phonegap-plugins\/childBrowser": [
+
+        ],
+        "phonegap-plugins\/datePicker": [
+
+        ],
+        "phonegap-plugins\/bluetooth": [
+
+        ],
+        "phonegap-plugins\/share": [
+
+        ],
+        "phonegap-plugins\/barcodeScanner": [
+
+        ],
+        "phonegap-plugins\/webIntent": [
+
+        ],
+        "winjs\/Microsoft.WinJS": {
+            "ui-color": [
+                "CSS-UI-DARK"
+            ]
+        }
+    },
+    "splash": {
+        "android": {
+            "background": "#cccccc"
+        }
+    },
+    "version": "1.0"
+}

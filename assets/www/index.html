@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="plugins/plugin-loader.js"></script>
+  <link rel="stylesheet" href="plugins/plugin-loader.css">
+  <script>
+  monaca.viewport({ width: 320 });
+    function showDetail(filename, trainname) {
+      monaca.pushPage("detail.html", {}, {filename : filename, trainname : trainname})
+    }
+  </script>
+  <style>
+    #attribution {
+      padding-top: 1em;
+      text-align: right;
+      font-size: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div data-role="content">
+    <ul data-role="listview">
+      <li data-role="list-divider">Tokaido Shinkansen Trains</li>
+      <li><a href="#" onclick="showDetail('0kei', 'Series 0')">Series 0</a></li>
+      <li><a href="#" onclick="showDetail('300kei', 'Series 300')">Series 300</a></li>
+      <li><a href="#" onclick="showDetail('700kei', 'Series 700')">Series 700</a></li>
+      <li><a href="#" onclick="showDetail('n700kei', 'Series N700')">Series N700</a></li>
+    </ul>
+    <p id="attribution">Photos by <a href="#" onclick="monaca.invokeBrowser('http://www.flickr.com/photos/kimuchi583/')">kimuchi583</a></p>
+  </div>
+</body>
+</html>

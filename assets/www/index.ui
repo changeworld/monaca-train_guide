@@ -1,0 +1,30 @@
+{
+    "top" : {
+        "container" : "toolbar",
+        "style" : {
+            "title" : "Shinkansen Catalog"
+        }
+    },
+    "bottom": {
+        "container": "tabbar",
+        "items":
+            [
+                {
+                    "component": "tabbarItem",
+                    "style": {
+                        "text": "Tokaido",
+                        "image": "images/icon.png"
+                    },
+                    "link": "index.html"
+                },
+                {
+                    "component": "tabbarItem",
+                    "style": {
+                        "text": "Tohoku",
+                        "image": "images/icon.png"
+                    },
+                    "link": "tohoku.html"
+                }
+            ]
+    }
+}

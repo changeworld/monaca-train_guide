@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="plugins/plugin-loader.js"></script>
+  <link rel="stylesheet" href="plugins/plugin-loader.css">
+  <script>
+  monaca.viewport({ width: 320 });
+    $(function() {
+      $("#train-image").css("background-image", "url(images/" + monaca.queryParams["filename"] + ".jpg)");
+      monaca.updateUIStyle("detail-toolbar", "title", monaca.queryParams["trainname"]);
+    });
+  </script>
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+    #train-image {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 3px #ccc;
+      background: #000 center center fixed;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="train-image"></div>
+</body>
+</html>
